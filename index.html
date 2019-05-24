@@ -10,7 +10,7 @@
       }
       /*Style the header*/
       .header{
-        padding: 300px;
+        padding: 200px;
         text-align: center;
         background-color: #000000;
         background-image: url(images/pets.JPG);
@@ -79,6 +79,10 @@
           width: 100%;
           padding: 20px;
       }
+      /*class for the first line indent*/
+      .indent {
+        padding-left: 1.8em
+      }
     </style>
   </head>
 
@@ -109,12 +113,75 @@
           <div class="fakeimg" style="height:60px;">Image</div> -->
       </div>
       <div class="main">
-          <h2>Machine Learning</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>1. Regularizer control the complexity</p>
-         
+          <h1>Cloud</h1>
+
+          <h2>Key Concepts</h2>
+
+          <h3>Container</h3>
+          <p>Extend link <a href="URL">https://slideplayer.com/slide/12137884/</a>
+          </p>
+
+          <h3>Microservices</h3>
+          <p>Details see <a href="URL">https://martinfowler.com/articles/microservices.html</a>
+          </p>
+
+          <h3>Scaling</h3>
+          <h4>Notes from the reference</h4>
+          <p>
+            <b>1. Single Server</b><br>
+            <ul>
+              <li>Since nodejs by nature uses an event-driven and non-blocking I/O model, it will not block with a single request.
+                It can take multiple requests while waiting for the database or file system to respond.</li>
+              <li>The app should be a monolith (single app). The downside of this is if you make changes, you will need to take it down the app while 
+                  updating the server.</li>
+              <li>Web application and database share the same resources (CPU, Memory RAM, I/O).</li>
+              <li>Using AWS t2.micro/t2.nano or equivalent (1 CPU/1 GB RAM)</li>
+            </ul>
+
+            <b>2. Vertical Scaling 10~99 users</b><br>
+            <ul>
+              <li>Upgrading a single server hardware with more resources such as higher/faster CPU, RAM, HDD and I/O</li>
+              <li>Since we have multi CPU cores, we can run two instances of nodejs and load balance it. In this way, there is no downtime for updating server. Take one server down to 
+                update another one, vice versus. <font color="red">Do we just have one server here?</font>
+              </li>
+              <li>Advantage: (1) Zero-downtime upgrades. (2) <font color="red">Reverse Proxy ????</font>Reverse Proxy ???? Nginx takes care of users requests and accomplish two functions: static filers server and reverse proxy. It serve by itself all static files (CSS, JS, Images) without touching the web app. The request that needs the app to resolve are redirected it </li>
+              <li>AWS upgrade to t2.medium or equivalent (2 CPU / 4 GB RAM).</li>
+            </ul>
+
+            <b>3. Horizontal Scaling 100 - 999 users</b><br>
+            <ul>
+              <li>The bottleneck here may be the I/O(vertical) and database(horizontal). And the larger vertical scaling gets really expensive. </li>
+              <li>Horizontal scaling will give you redundancy and failover capabilities if done right.</li>
+              <li>Move the database to a different server and scale it independently</li>
+              <li>Add replica set if the database hits its limit and db caching if it makes sense</li>
+              <li>Solve network limits: You might need to play also with /etc/security/limits.d and /etc/sysctl.conf based on your needs.</li>
+            </ul>
+
+            <b>4. Multi-servers 1000+ users</b><br>
+            <ul>
+              <li>Add load balancer (e.g. ELB) and add app units.</li>
+              <li>Use multiple availability zones (AZ) in a region (e.g. us-east-1, us-west-1), which one are connected through low latency links.</li>
+              <li>Split static files to different server/service for easier maintenance. (e.g. AWS S3 and CloudFront CDN). Add CDN for static files for optimizing cross-origin performance and lower the latency. You can store assets such as Javascript, CSS, images, videos, and so on.</li>
+              <li>In this server setup, we started growing horizontally rather than vertically. In other words, we separated web application from database and scale each one with multiple instances. </li>
+
+            </ul>
+
+            <b>5. Microservices</b><br>
+            <ul>
+              <li>Break our application down to into multiple smaller and independent components, so that we can scale independently. </li>
+            </ul>
+            <b>6. Automate Chores (1,000,000+ concurrent users)</b><br>
+          </p>
+          <p>Reference study link:<a href="URL">https://adrianmejia.com/blog/2016/03/23/how-to-scale-a-nodejs-app-based-on-number-of-users/</a><br>
+             Learn Node.js here: <a href="URL">https://nodejs.org/en/about/</a>
+          </p>
+
+          <h3>Container Orchestration</h3>
+
+          <h3>Multi Tenancy</h3>
+          <p>link for study: <a href="URL">http://multitenancy-in-saas-paas.wikispaces.asu.edu/</a><br>
+            <a href="URL">https://www.altexsoft.com/blog/business/starting-a-saas-business-9-steps-towards-success/</a>
+          </p>
       </div>
     </div>
 
