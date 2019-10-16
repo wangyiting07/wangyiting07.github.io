@@ -84,12 +84,24 @@ color: #000000;
     width: 100%;
     padding: 20px;
 }
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/*class for the first line indent*/
+.indent {
+  
+}
 /********************************************************/
 
 /********************* Text Style ***********************/
 /*first line line indent*/
 .indent{
 text-indent: 20px;
+/*padding-left: 1.8em*/
 }
 
 /*tab effect*/
