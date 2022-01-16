@@ -87,156 +87,88 @@
   </section>
 
 <!-- banner section -->
-<section id="home" class="w3l-banner py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
-                <span class="title-small">Hello</span>
-                <h3 class="title-big"> Yiting </h3>
-                <p>With interdisciplinary background, I wish to utilize knowledge of hardware design, machine learning and engineer to make our life easier.
-                  Take advatage of machine to know ourselves better and achieve more impossibilities. 
-                </p>
-                
-            </div>
-            
-        </div>
-    </div>
-</section>
-<!-- //banner section -->
-
-<!-- home page about section -->
-<section class="w3l-index3" id="about">
-    <div class="midd-w3 py-5">
-        <div class="container py-lg-5 py-md-3">
-            <h5 class="title-small mb-2">Who am i?</h5>
-            <h3 class="title-big">I'm Yiting Wang, an Advanced Product Engineer and a Research Intern</h3>
-            <p class="mt-4">I'm currently working in visualization team of Siemens Industrial Software Company developing NX in C++(Please check this link <a href="https://www.plm.automation.siemens.com/global/en/products/nx/" target="_blank">Siemens NX</a> for further details of this software).
-              During my part time, I study on multimodal and transfer learning with electroencephalogram(EEG) and eye movement signals for emotion recognition. 
-              Combining different types of features including time series and topological structure of EEG signals for emotion recognition is also my focus right now.
-              My interests are not limited to Brain-Computer Interface (BCI), but extend to other fields of Human-Computer Interface (HCI) like smart devices, wearable devices, inteligent user interface, etc. 
-            </p>
-        </div>
-    </div>
-</section>
-<!-- //home page about section -->
-
-<!-- home page second section -->
-<div class="py-5 w3l-resume">
-    <div class="container py-lg-5 py-3">
-        <h5 class="title-small mb-2"> Publication</h5>
-        <h3 class="title-big mb-4">Feedback motivates me to go forward and work harder</h3>
-        <p class="mt-4">
-          <ul>
-            <li><b>Yiting Wang</b>, Weibang Jiang, Rui Li, Bao-Liang Lu. “Emotion Transformer Fusion: Complementary Representation Properties of EEG and Eye Movements on Recognizing Anger and Surprise.” to appear in IEEE BIBM 2021*</li>
-            <br/>
-            <li>Li, Rui, <b>Yiting Wang</b>, and Bao-Liang Lu. "A Multi-Domain Adaptive Graph Convolutional Network for EEG-based Emotion Recognition." Proceedings of the 29th ACM International Conference on Multimedia. 2021
-              <a href="../assets/pdf/MD_AGCN.pdf"  target="_blank">pdf</a>
-            </li>
-          </ul>
-          <br/>
-          <p style="line-height:1em;font-size:0.9em">*I don't know whether it is appropriate to put the pdf in my website before the conference is held. So I didn't put the pdf here for safe, if you would like to read the paper before it appears online, please contact me.</p>
-        </p>
-    </div>
-</div>
-
-<section class="w3l-index3" id="about">
+<section class="w3l-index3" id="Significance">
   <div class="midd-w3 py-5">
       <div class="container py-lg-5 py-md-3">
-          <h5 class="title-small mb-2">Who am i?</h5>
-          <h3 class="title-big">I'm Yiting Wang, an Advanced Product Engineer and a Research Intern</h3>
-          <p class="mt-4">I'm currently working in visualization team of Siemens Industrial Software Company developing NX in C++(Please check this link <a href="https://www.plm.automation.siemens.com/global/en/products/nx/" target="_blank">Siemens NX</a> for further details of this software).
-            During my part time, I study on multimodal and transfer learning with electroencephalogram(EEG) and eye movement signals for emotion recognition. 
-            Combining different types of features including time series and topological structure of EEG signals for emotion recognition is also my focus right now.
-            My interests are not limited to Brain-Computer Interface (BCI), but extend to other fields of Human-Computer Interface (HCI) like smart devices, wearable devices, inteligent user interface, etc. 
+          <h5 class="title-small mb-2">A fun project done in college</h5>
+          <h3 class="title-big">Introduction</h3>
+          <p class="mt-4">  
+            This project was conducted by a group of five students for the national College Creative Competition from 2014 to 2016. <!--TODO: need to check the name-->
+            We were fascinated by the concept that our daily tools like watches, cups, or even pens can function more than what they traditionally perform. 
+            A smart cup project seemed feasible after different rounds of research and discussion. 
+            Our advisor also thought it was a meaningful project since drinking enough water is critical to health and people sometimes is too busy to drink water.
+            <br/>
+            The cup we designed can use LED lights with different colors to indicate whether the water is appropriate to drink or not. Normally, 55 celsius is the most conformtable temperature for people to drink. 
+            Besides the temperature, the cup could work as a blender that mixes the water with powder to conduct convenient
+            soft drinks. The core functionality of the smart cup is to record the amount of water the user drinks every day, and send notifications by the APP to remind the user
+            if they didn't drink enough water. We visualized the chart of the amount of water in the APP so that users
+            can have a clear idea of how much water they drink, which may help to cultivate habits of drinking enough amount of water. 
+            What's more, We interviewed students at campus and found that many of them might forget their cups in the libraries, dining rooms or accidentally drop them while riding bikes.
+            So, the functionality of sending an alarm which can avoid those situations from happening was added to our smart cup. 
+            Since the cup is connected to the phone by Bluetooth, if it is away from the user by over 50 meters, the app will send the alarm. 
+            At last, some tips about knowledge of living a healthier life are pushed through notifications, like "We recommend drinking a cup of water the first thing in the morning after getting up.". 
+            The whole idea of this cup is to offer a healthier way to live and cultivate good habits of drinking water. 
+            <br/>
+            The project was divided into two parts, hardware design and software design.  
+            <br/>
+            <br/>
+            Hardware part: Utilizing microcontroller and multiple sensors including a pressure sensor, temperature sensor and position accelerometer to achieve following things:
+            <br/>
+            <ol>
+              <li>Detected the temperature of water in the cup and displayed the range of temperature by LED lights to remind user whether it was suitable to drink or not</li>
+              <li>Accurately recorded the amount of water users drink by discriminating actions of drinking water and pouring water.</li>
+              <li>Blended water with powder by the motor and a small wheel at the bottom of the cup.</li>
+              <li>Implemented the Bluetooth to coomunicate the cup with the APP on the Android phone.</li>
+            </ol>
+            <br/>
+            <p>Software part: Developing an Android Application that connected with the cup through Bluetooth to achieve the following functionalities:</p>
+            
+            <ol>
+              <li>Set an alarm for the disconnection between the phone and cup to remind users to carry the cup on and prevent the loss.</li>
+              <li>Displayed the chart of amount of the water users drink and anaylze their lifestyles.</li>
+              <li>Offered proper drinking advice by the personal setting like gender, age, using scene (sport mode, office mode), etc.</li>
+            </ol>
           </p>
       </div>
   </div>
 </section>
-<!-- //home page second section -->
 
+<div class="py-5 w3l-resume" id="Outcome">
+  <div class="container py-lg-5 py-3">
+      <h5 class="title-small mb-2"></h5>
+      <h3 class="title-big mb-4">My Role and Contribution</h3>
+      <p class="mt-4">
+        As the project leader in the group of five, I broke down the whole project into two parts and four phases. One part is hardware and related implementation with three members. 
+        Another is the software for two members. 
+        In the first research phase, we searched for similar products and related studies and finally designed the prototype. 
+        The second phase was the early design implementation (Proof of concept). 
+        We examined our design, found andh modified unrealistic. 
+        In the next phase, we finished the implementation of each part and intergrated them together.
+        During the final test phase, we tested the software and hardware together and then wrote the project report. 
 
+        As for the specific technology work, I was part of hardware group and mainly worked on things related to the microcontroller. 
+        For example, I implemented the communication between the microcontroller and sensors, displayed water temperature for users, and communicated the cup with the APP. 
+        Of course, although harware and software were separated, we also helped each other when facing big obstacles as a whole team. So I investigated some issues of Android APP as well.
+      </p>
+  </div>
+</div>
 
-<!-- stats --> <!-- TODO -->
-<!-- <section class="w3l-stats py-lg-5 py-4" id="stats">
-    <div class="gallery-inner container py-md-5 py-4">
-        <div class="row stats-con">
-            <div class="col-sm-3 col-6 stats_info counter_grid">
-                <span class="fa fa-laptop"></span>
-                <p class="counter">700</p>
-                <h4>Completed projects</h4>
+<section class="w3l-index3" id="Significance">
+  <div class="midd-w3 py-5">
+      <div class="container py-lg-5 py-md-3">
+          <h5 class="title-small mb-2"></h5>
+          <h3 class="title-big">Documentation and Video</h3>
+          <p class="mt-4">  
+             Since the project report was written in Chinese, I would put some pictures and brief explaination here rather than the whole report.
+             <div class="img-effect text-lg-center">
+              <!-- <img src="assets/images/photo_my.png" alt="myphoto" class="img-fluid"> -->
             </div>
-            <div class="col-sm-3 col-6 stats_info counter_grid1">
-                <span class="fa fa-hourglass-end"></span>
-                <p class="counter">120</p>
-                <h4>In processes</h4>
-            </div>
-            <div class="col-sm-3 col-6 stats_info counter_grid mt-sm-0 mt-5">
-                <span class="fa fa-gift"></span>
-                <p class="counter">12</p>
-                <h4>Awards Received</h4>
-            </div>
-            <div class="col-sm-3 col-6 stats_info counter_grid2 mt-sm-0 mt-5">
-                <span class="fa fa-smile-o"></span>
-                <p class="counter">1050</p>
-                <h4>Happy Clients</h4>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- //stats -->
 
-<!-- home page video popup section TODO-->
-<!-- <section class="w3l-index5" id="about">
-    <div class="new-block py-5">
-        <div class="container py-lg-5">
-            <div class="middle-section text-center">
-                <div class="section-width">
-                    <h3 class="title-big">Watch</h3>
-                    <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, corrupti odit? At iure
-                        facere,
-                        porro repellat officia quas, dolores magnam assumenda soluta odit
-                        harum
-                        voluptate inventore ipsa maiores fugiat accusamus eos nulla. Iure voluptatibus explicabo
-                        officia.</p>
-                </div>
-                <div class="history-info mt-5">
-                    <div class="position-relative">
-                        <img src="assets/images/bg.jpg" class="img-fluid radius-image video-popup-image"
-                            alt="video-popup">
+          </p>
+      </div>
+  </div>
+</section>
 
-                        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">
-                            <span class="video-play-icon">
-                                <span class="fa fa-play"></span>
-                            </span>
-                        </a> -->
-
-                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                        <!-- <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                            <iframe src="#" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                <!-- <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                    <iframe src="#" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- //home page video popup section -->
-
- <!-- freelance hire me -->
- <!-- <section class="w3l-grid-quote text-center py-5">
-   <div class="container py-3">
-     <h6 class="title-small">Get in touch</h6>
-     <h3 class="title-big mb-md-5 mb-4">Need a Researcher! Contact Me.</h3>
-     <a href="contact.html" class="btn btn-style btn-primary mr-2">Hire Me </a>
-     <a href="contact.html" class="btn btn-style btn-outline-primary">Get in touch</a>
-   </div>
- </section> -->
- <!-- //freelance hire me -->
  
 <!-- Footer -->
 <section class="w3l-footer py-sm-5 py-4">
