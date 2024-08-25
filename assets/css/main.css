@@ -3435,7 +3435,7 @@ input, select, textarea {
 			padding-bottom: 0.4em;
 		}
 
-		#banner heading-with-image {
+		#banner .heading-with-image {
             display: flex;
             justify-content: space-between;
 			align-items: flex-end;
